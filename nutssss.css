@@ -169,7 +169,7 @@ body {
     width: 710px;
     height: 550px;
     float: right;
-    margin-right: 5%;
+    margin-right: 14%;
 }
 
 .cmd {
@@ -260,7 +260,7 @@ body {
 .cmd2 {
     position: relative;
     top: -280px;
-    left: 100px;
+    left: 200px;
 }
 
 .cmdText .ul {
@@ -279,7 +279,7 @@ body {
 
 #footer {
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     float: left;
     text-align: center;
     position: fixed;
