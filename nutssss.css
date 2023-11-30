@@ -8,7 +8,9 @@ li {
     list-style: none;
 }
 
-a:hover,img,.click div:hover {
+a:hover,
+img,
+.click div:hover {
     cursor: url("./pointer/Link.cur"), pointer;
 }
 
@@ -148,16 +150,13 @@ body {
 
 .meBox-Button span {
     font-weight: bold;
+    color: #2980b9;
 }
 
 .meBox-Button span:hover {
     cursor: pointer;
     color: #3498db;
-}
-
-.meBox-Button span a {
-    text-decoration: none;
-    color: #2980b9;
+    cursor: url("./pointer/Link.cur"), pointer
 }
 
 .meBox:hover .meBox-Button a {
@@ -391,4 +390,79 @@ body {
         margin: 0 auto;
         z-index: 1;
     }
+}
+
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+.personBox {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 24px 12px whitesmoke;
+}
+
+.personBox img {
+    transition: all 0.3s;
+}
+
+.personBox img:hover {
+    opacity: 0.8;
+}
+
+.personBox img:nth-of-type(1) {
+    border-radius: 4px;
+}
+
+.personBox .message {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personBox .card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.personBox .card:hover {
+    opacity: 0.8;
+    cursor: url("./pointer/Link.cur"), pointer;
+}
+
+.personBox .c1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personBox .c2 {
+    display: flex;
+    flex-direction: column;
 }

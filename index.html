@@ -8,7 +8,8 @@
     <title>蔡俊威 - 个人介绍</title>
     <link rel="stylesheet" type="text/css" href="./FiraCode.css">
     <link rel="stylesheet" type="text/css" href="./nutssss.css">
-    <link rel="icon" href="https://v.bootstrapmb.com/2021/3/fcy939884/favicon.ico">
+    <link rel="icon" href="./img/ball.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,8 +28,7 @@
                         style="width: 24px; vertical-align: middle;"></p>
             </div>
             <div class="meBox-Button">
-                <span><a href="">关于</a></span>
-                <span><a href="">联系</a></span>
+                <span id="tel">联系</span>
             </div>
         </div>
         <div id="cmdBox">
@@ -106,9 +106,39 @@
             </div>
         </div>
     </div>
+    <div class="mask">
+        <div class="personBox">
+            <h3>联系我</h3>
+            <div class="message">
+                <div class="card c1">
+                    <div>
+                        <img src="./img/WeChat_PC_App_Icon_200528.png.png" alt="" width="26">
+                        <p style="font-size: .8rem;">Wechat</p>
+                        <h4>微信</h4>
+                    </div>
+                    <img src="./img/tel.jpg" alt="" width="60" height="60">
+                </div>
+                <div class="card c2">
+                    <img src="./img/分组 2.png" alt="" width="50">
+                    <p style="font-size: .75rem;margin-top: 6px;">1497526857</p>
+                </div>
+                <div class="card c2">
+                    <img src="./img/icons8-手机-96.png" alt="" width="50">
+                    <p style="font-size: .7rem;margin-top: 6px;">15917831862</p>
+                </div>
+                <div class="card c2" style="width: 60%;">
+                    <img src="./img/icons8-邮箱-96.png" alt="" width="50">
+                    <p style="font-size: .9rem;margin-top: 6px;">1497526857@qq.com</p>
+                </div>
+            </div>
+            <img id="close" src="./img/icons8-关闭.gif" alt="" width="40">
+        </div>
+    </div>
     <div id="footer">
         <p>© 2023</p>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
